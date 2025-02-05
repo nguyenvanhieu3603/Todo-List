@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản Lý Nhiệm Vụ CLI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quản Lý Nhiệm Vụ</h1>
+        
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Nhập nhiệm vụ mới">
+            <button onclick="addTask()">Thêm Nhiệm Vụ</button>
+        </div>
+
+        <div class="filter-section">
+            <button onclick="filterTasks('all')">Tất Cả</button>
+            <button onclick="filterTasks('pending')">Chưa Hoàn Thành</button>
+            <button onclick="filterTasks('in-progress')">Đang Tiến Hành</button>
+            <button onclick="filterTasks('completed')">Đã Hoàn Thành</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
